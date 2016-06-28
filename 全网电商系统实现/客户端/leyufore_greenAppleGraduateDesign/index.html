@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreenAppleGraduateDesign</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        //商品发布监听
+        $("#leftnav_product_release").click(function () {
+            leftnav_resetShow();
+            leftnav_setShow("leftnav_product_release");
+            rightcontent_resetShow();
+            rightcontent_setShow("rightcontent_product_release")
+        });
+        //商品维护监听
+        $("#leftnav_procuct_maintain").click(function () {
+            leftnav_resetShow();
+            leftnav_setShow("leftnav_procuct_maintain");
+            rightcontent_resetShow();
+            rightcontent_setShow("rightcontent_product_maintain");
+        });
+        //订单交易监听
+        $("#leftnav_order_transaction").click(function () {
+            leftnav_resetShow();
+            leftnav_setShow("leftnav_order_transaction");
+            rightcontent_resetShow();
+            rightcontent_setShow("rightcontent_order_transaction");
+        });
+
+        //初始化时显示商品发布
+        rightcontent_resetShow();
+        rightcontent_setShow("rightcontent_product_release");
+        //商品维护-仓库Tab监听
+        $("#rightcontent_product_maintain_tab_storehouse").click(function () {
+            $("#rightcontent_product_maintain_tab_saling").removeClass("active");
+            $("#rightcontent_product_maintain_tab_storehouse").addClass("active");
+            $("#rightcontent_product_maintain_saling").hide();
+            $("#rightcontent_product_maintain_storehouse").show();
+        });
+        //商品维护-销售Tab监听
+        $("#rightcontent_product_maintain_tab_saling").click(function () {
+            $("#rightcontent_product_maintain_tab_storehouse").removeClass("active");
+            $("#rightcontent_product_maintain_tab_saling").addClass("active");
+            $("#rightcontent_product_maintain_storehouse").hide();
+            $("#rightcontent_product_maintain_saling").show();
+        });
+        //初始化时显示仓库中内容
+        $("#rightcontent_product_maintain_tab_storehouse").addClass("active");
+        $("#rightcontent_product_maintain_saling").hide();
+        $("#rightcontent_product_maintain_storehouse").show();
+
+        var user = {
+            username: "leyufore",
+            password: "leyufore",
+            session_taobao: "610230519f76d16e0f64b6c0974a361eb587c672fb9d7dd3651880377",
+            session_yhd: "2cc2238c8c12da12ef05937db0d01f24"
+        };
+        //对象转json字符串
+        localStorage.user = JSON.stringify(user);
+        //json字符串转对象
+        var userData = $.parseJSON(localStorage.user);
+        localStorage.imgPath = "";
+
+        productQueryAll();
+
+
+    });
+    //左侧导航全部处于未选中显示状态
+    function leftnav_resetShow() {
+        $("#leftnav_product_release").removeClass("active");
+        $("#leftnav_procuct_maintain").removeClass("active");
+        $("#leftnav_order_transaction").removeClass("active");
+    }
+    //leftnavId处于显示状态
+    function leftnav_setShow(leftnavId) {
+        $("#" + leftnavId).addClass("active");
+    }
+    //右侧内容块全都不显示
+    function rightcontent_resetShow() {
+        $("#rightcontent_product_maintain").hide();
+        $("#rightcontent_product_release").hide();
+        $("#rightcontent_order_transaction").hide();
+    }
+    //rightcontentId处于显示状态
+    function rightcontent_setShow(rightContentId) {
+    $("#" + rightContentId).show();
+    }
+    /**
+     * 商品发布
+     */
+    function productReleaseSubmit() {
+        var user = $.parseJSON(localStorage.user);
+        var imgPath = localStorage.imgPath;
+        console.log("$('#form_product_release').serialize :" + $("#form_product_release").serialize());
+        console.log("localStorage.imgPath : " + imgPath);
+        /**
+         * 重要知识点:  $.param,serialize,serializeArray用于序列化。序列化的结果就是一个"name=value&name1=value1..."形式的字符串
+         */
+//        console.log("" + $.param(user,false));
+        $.ajax({
+            url: "http://localhost:8080/GreenAppleGraduateDesign/productAction_productRelease",
+            type: "POST",
+            dataType: "json",
+            async: false,
+            data: $("#form_product_release").serialize() + "&product.imgPath=" + imgPath + "&user.username=" + user.username + "&user.password="
+            + user.password + "&user.session_taobao=" + user.session_taobao + "&user.session_yhd=" + user.session_yhd,
+            success: function (data) {
+                console.log("success")
+                if (data.code == 400) {
+                    alert(data.msg);
+                } else {
+                    console.log("productReleaseSubmit data.product :\n" + data.product.title);
+                    //商品发布对应的UI刷新
+                    productShowUI(data.product);
+                    alert("商品发布成功");
+                }
+            },
+            error: function (data) {
+                alert("productReleaseSubmit error");
+            }
+        });
+    }
+    //上传图片
+    function productReleaseImgUpload() {
+        var fd = new FormData();
+        fd.append("uploadImg", $("#product_release_form_file_img")[0].files[0]);
+
+        var xhr = new XMLHttpRequest();
+        //上传过程中的回调函数
+        xhr.upload.onprogress = function (event) {
+            if (event.lengthComputable) {
+                $("#product_release_form_file_img_uploadState").text("正在上传");
+            }
+        };
+        //开始上传的回调函数
+        xhr.onloadstart = function (event) {
+            $("#product_release_form_file_img_uploadState").text("开启上传");
+        };
+        //上传完成的回调函数
+        xhr.onload = function (event) {
+            $("#product_release_form_file_img_uploadState").text("上传成功");
+            console.log("productReleaseImgUpload  onload responseText : " + xhr.responseText);
+            var response = $.parseJSON(xhr.responseText);
+            if (response.code == 200) {
+                localStorage.imgPath = response.imgPath;
+                console.log("localStorage.imgPath :" + localStorage.imgPath);
+            } else {
+                alert(response.msg);
+            }
+        };
+        //上传失败的回调函数
+        xhr.onerror = function (event) {
+            $("#product_release_form_file_img_uploadState").text("上传失败");
+        };
+        xhr.open("POST", "http://localhost:8080/GreenAppleGraduateDesign/productAction_productImgUpload", true);
+        xhr.send(fd);
+    }
+    //登录时查询所有商品
+    function productQueryAll() {
+        var user = $.parseJSON(localStorage.user);
+        $.ajax({
+            url: "http://localhost:8080/GreenAppleGraduateDesign/productAction_productFindAll",
+            data: "user.username=" + user.username + "&user.password=" + user.password
+            + "&user.session_taobao=" + user.session_taobao + "&user.session_yhd=" + user.session_yhd,
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                if (data.code == 200) {
+                    if (data.productList == undefined) {  //没有商品
+                        console.log("数据库中商品数目为0")
+                    } else {
+                        console.log(data.productList);
+                        $.each(data.productList, function (index, value) {
+                            //对每个商品进行UI显示
+                            productShowUI(value);
+                        });
+                    }
+                }
+            },
+            error: function (data) {
+                alert("商品查询所有error")
+            }
+        });
+    }
+    //商品下架
+    function productShelveDown(btnDomNode){
+        console.log("productShelveDownTest");
+        console.log(btnDomNode);
+        var itemId = $(btnDomNode).parent().parent().attr("p-itemid");
+        var user = $.parseJSON(localStorage.user);
+        $.ajax({
+            url: "http://localhost:8080/GreenAppleGraduateDesign/productAction_productShelveDown",
+            type: "POST",
+            dataType: "json",
+            data: "product.itemId=" + itemId + "&user.username=" + user.username + "&user.password=" + user.password
+            + "&user.session_taobao=" + user.session_taobao + "&user.session_yhd=" + user.session_yhd,
+            success: function (data) {
+                if (data.code == 400) {
+                    alert(data.msg);
+                } else {
+                    productDeleteInSalingUI(data.product.itemId);
+                    productShowUI(data.product);
+                    alert("下架成功");
+                }
+            },
+            error: function (data) {
+                alert("productShelveDown error");
+            }
+        });
+    }
+    //商品上架
+    function productShelveUp(btnDomNode) {
+        console.log("productShelveUpTest");
+        console.log(btnDomNode);
+        var itemId = $(btnDomNode).parent().parent().attr("p-itemid");
+        var user = $.parseJSON(localStorage.user);
+        $.ajax({
+            url: "http://localhost:8080/GreenAppleGraduateDesign/productAction_productShelveUp",
+            type: "POST",
+            dataType: "json",
+            data: "product.itemId=" + itemId + "&user.username=" + user.username + "&user.password=" + user.password
+            + "&user.session_taobao=" + user.session_taobao + "&user.session_yhd=" + user.session_yhd,
+            success: function (data) {
+                if (data.code == 400) {
+                    alert(data.msg);
+                } else {
+                    productDeleteInStoringUI(data.product.itemId);
+                    productShowUI(data.product);
+                    alert("上架成功");
+                }
+            },
+            error: function (data) {
+                alert("productShelveUp error");
+            }
+        });
+    }
+    //商品删除
+    function productDelete(btnDomNode,storingOrSaling){
+        console.log("productDeleteTest");
+        console.log(btnDomNode);
+        if(storingOrSaling == "storing"){
+            console.log("storing");
+        }else{
+            console.log("saling");
+        }
+        var itemId = $(btnDomNode).parent().parent().attr("p-itemid");
+        var user = $.parseJSON(localStorage.user);
+        $.ajax({
+            url: "http://localhost:8080/GreenAppleGraduateDesign/productAction_productDelete",
+            type: "POST",
+            dataType: "json",
+            data: "product.itemId=" + itemId + "&user.username=" + user.username + "&user.password=" + user.password
+            + "&user.session_taobao=" + user.session_taobao + "&user.session_yhd=" + user.session_yhd,
+            success: function (data) {
+                if (data.code == 400) {
+                    alert(data.msg);
+                } else {
+                    console.log("data.prompt : "+data.prompt);
+                    console.log("data.itemId : "+data.itemId);
+                    if(storingOrSaling == "saling"){
+                        productDeleteInSalingUI(data.itemId);
+                    }else{
+                        productDeleteInStoringUI(data.itemId);
+                    }
+                    alert(data.prompt);
+                }
+            },
+            error: function (data) {
+                alert("productDelete error");
+            }
+        });
+    }
+    //商品显示UI刷新
+    function productShowUI(product) {
+        if (product.state == 1) { //商品处于销售中状态
+            var tdImg = $("<td><img class='img - thumbnail' style = 'max-height: 50px;max-width: 50px;'src = '" + product.imgPath + "' ></td> ");
+            var tdTitle = $("<td>" + product.title + "</td>");
+            var tdPrice = $("<td>" + product.itemSku_price + "</td>");
+            var tdStock = $("<td>" + product.itemSku_stock + "</td>");
+            var tdState = $("<td>" + "销售中" + "</td>");
+            var btnShelveUp = $("<button type='button' class='btn btn-danger' onclick='productShelveDown(this)'><span class='icon-cloud-upload'></span> 下架</button>");
+            var btnEdit = $("<button type='button' class='btn btn-primary'><span class='icon-cloud-upload' onclick=''></span> 编辑</button>");
+            var btnDelete = $("<button type='button' class='btn btn-primary' onclick='productDelete(this,\"saling\")'><span class='icon-trash' onclick=''></span> 删除</button>");
+            var tdButtons = $("<td></td>").append(btnShelveUp).append(btnEdit).append(btnDelete);
+            var tr = $("<tr p-itemId='" + product.itemId + "'></tr>").append(tdImg).append(tdTitle).append(tdPrice).append(tdStock).append(tdState).append(tdButtons);
+            $("#rightcontent_product_maintain_saling_tbody").prepend(tr);
+        } else if (product.state == 0) {   //商品处于仓库中状态
+            var tdImg = $("<td><img class='img - thumbnail' style = 'max-height: 50px;max-width: 50px;'src = '" + product.imgPath + "' ></td> ");
+            var tdTitle = $("<td>" + product.title + "</td>");
+            var tdPrice = $("<td>" + product.itemSku_price + "</td>");
+            var tdStock = $("<td>" + product.itemSku_stock + "</td>");
+            var tdState = $("<td>" + "仓库中" + "</td>");
+            var btnShelveUp = $("<button type='button' class='btn btn-danger' onclick='productShelveUp(this)'><span class='icon-cloud-upload' onclick=''></span> 上架</button>");
+            var btnEdit = $("<button type='button' class='btn btn-primary'><span class='icon-cloud-upload' onclick=''></span> 编辑</button>");
+            var btnDelete = $("<button type='button' class='btn btn-primary' onclick='productDelete(this,\"storing\")'><span class='icon-trash' onclick=''></span> 删除</button>");
+            var tdButtons = $("<td></td>").append(btnShelveUp).append(btnEdit).append(btnDelete);
+            var tr = $("<tr p-itemId='" + product.itemId + "'></tr>").append(tdImg).append(tdTitle).append(tdPrice).append(tdStock).append(tdState).append(tdButtons);
+            $("#rightcontent_product_maintain_storehouse_tbody").prepend(tr);
+        } else {
+            alert("该商品没有状态,请联系开发商");
+        }
+    }
+    //商品删除UI刷新(UI级别删除)  --销售中删除
+    function productDeleteInSalingUI(itemId){
+        //删除在rightcontent_product_maintain_saling_tbody的tbody下属性值p-itemId=itemId的节点
+        $("#rightcontent_product_maintain_saling_tbody").children().each(function(index ,element){
+            if($(element).attr("p-itemId") == itemId){
+                $(element).remove();
+                return;
+            }
+        });
+    }
+    //商品删除UI刷新(UI级别删除)  --仓库中删除
+    function productDeleteInStoringUI(itemId){
+        //删除在rightcontent_product_maintain_saling_tbody的tbody下属性值p-itemId=itemId的节点
+        $("#rightcontent_product_maintain_storehouse_tbody").children().each(function(index ,element){
+            if($(element).attr("p-itemId") == itemId){
+                $(element).remove();
+                return;
+            }
+        });
+    }
+</script>
+<!-- 标题栏-->
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">全网电商平台</a>
+        </div>
+        <div class="nav navbar-nav navbar-right">
+            <p class="navbar-text">Leyufore</p>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <!-- 左侧导航栏 -->
+    <div class="col-md-2">
+        <div class="list-group">
+            <a href="#" class="list-group-item disabled">商品管理</a>
+            <a href="#" id="leftnav_product_release" class="list-group-item active">商品发布</a>
+            <a href="#" id="leftnav_procuct_maintain" class="list-group-item">商品维护</a>
+            <a href="#" class="list-group-item disabled">交易管理</a>
+            <a href="#" id="leftnav_order_transaction" class="list-group-item">订单交易</a>
+        </div>
+    </div>
+    <!-- 右侧内容栏 -->
+    <div id="rightcontent_product_maintain" class="col-md-10">
+        <ul class="nav nav-tabs">
+            <li id="rightcontent_product_maintain_tab_storehouse" role="presentation"><a href="#">仓库中</a></li>
+            <li id="rightcontent_product_maintain_tab_saling" role="presentation"><a href="#">销售中</a></li>
+        </ul>
+        <table id="rightcontent_product_maintain_storehouse" class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>商品图片</th>
+                <th>商品名称</th>
+                <th>商品价格</th>
+                <th>商品库存</th>
+                <th>商品状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody id="rightcontent_product_maintain_storehouse_tbody">
+            </tbody>
+        </table>
+        <table id="rightcontent_product_maintain_saling" class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>商品图片</th>
+                <th>商品名称</th>
+                <th>商品价格</th>
+                <th>商品库存</th>
+                <th>商家状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody id="rightcontent_product_maintain_saling_tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="rightcontent_product_release" class="col-md-10">
+        <form class="form-horizontal" id="form_product_release">
+            <!--图片上传-->
+            <div class="form-group">
+                <label for="product_release_form_file_img" class="col-sm-2 control-label">
+                    <button type="button" class="btn btn-primary" onclick="productReleaseImgUpload()">上传</button>
+                </label>
+                <div class="col-sm-10">
+                    <input type="file" name="uploadImg" id="product_release_form_file_img"/>
+                    <p id="product_release_form_file_img_uploadState">未上传</p>
+                </div>
+            </div>
+            <input type="hidden" name="product.state" value="1" id="product_release_form_state"/>
+            <!--图片标题-->
+            <div class="form-group">
+                <label for="product_release_form_imgTitle" class="col-sm-2 control-label">图片标题</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.imgTitle" class="form-control" id="product_release_form_imgTitle"
+                           value="测试的标题" placeholder="图片标题">
+                </div>
+            </div>
+            <!--商品标题-->
+            <div class="form-group">
+                <label for="product_release_form_title" class="col-sm-2 control-label">商品标题</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.title" class="form-control" id="product_release_form_title"
+                           value="测试标题" placeholder="商品标题">
+                </div>
+            </div>
+            <!--商品类型 1-国内跟团游 2- 国内自由行-->
+            <div class="form-group">
+                <label for="product_release_form_item_type" class="col-sm-2 control-label">商品类型</label>
+                <div class="col-sm-10">
+                    <select name="product.item_type" id="product_release_form_item_type" class="form-control">
+                        <option value="1">跟团游</option>
+                        <option value="2">自由行</option>
+                    </select>
+                </div>
+            </div>
+            <!--商品描述-->
+            <div class="form-group">
+                <label for="product_release_form_desc" class="col-sm-2 control-label">商品描述</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.desc" class="form-control" id="product_release_form_desc"
+                           value="测试的商品描述" placeholder="商品描述">
+                </div>
+            </div>
+            <!--最大行程天数-->
+            <div class="form-group">
+                <label for="product_release_form_trip_max_day" class="col-sm-2 control-label">最大行程天数</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.trip_max_day" class="form-control"
+                           value="3" id="product_release_form_trip_max_day" placeholder="最大行程天数">
+                </div>
+            </div>
+            <!--行程晚数-->
+            <div class="form-group">
+                <label for="product_release_form_accomNigth" class="col-sm-2 control-label">行程晚数</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.accomNigth" class="form-control"
+                           value="2" id="product_release_form_accomNigth" placeholder="行程晚数">
+                </div>
+            </div>
+            <!--宝贝所在省-->
+            <div class="form-group">
+                <label for="product_release_form_prov" class="col-sm-2 control-label">宝贝所在省</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.prov" class="form-control" id="product_release_form_prov"
+                           value="广东" placeholder="宝贝所在省">
+                </div>
+            </div>
+            <!--宝贝所在城市-->
+            <div class="form-group">
+                <label for="product_release_form_city" class="col-sm-2 control-label">宝贝所在城市</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.city" class="form-control" id="product_release_form_city"
+                           value="佛山" placeholder="宝贝所在城市">
+                </div>
+            </div>
+            <!--出发地-->
+            <div class="form-group">
+                <label for="product_release_form_from_location" class="col-sm-2 control-label">出发地</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.from_location" class="form-control"
+                           value="武汉" id="product_release_form_from_location" placeholder="出发地">
+                </div>
+            </div>
+            <!--目的地-->
+            <div class="form-group">
+                <label for="product_release_form_to_location" class="col-sm-2 control-label">目的地</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.to_location" class="form-control"
+                           value="上海" id="product_release_form_to_location" placeholder="目的地">
+                </div>
+            </div>
+            <!--费用包含描述-->
+            <div class="form-group">
+                <label for="product_release_form_fee_included_desc" class="col-sm-2 control-label">费用包含描述</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.fee_included_desc" class="form-control"
+                           id="product_release_form_fee_included_desc"
+                           value="测试的费用包含" placeholder="费用包含描述">
+                </div>
+            </div>
+            <!--费用不包含描述-->
+            <div class="form-group">
+                <label for="product_release_form_fee_excluded_desc" class="col-sm-2 control-label">费用不包含描述</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.fee_excluded_desc" class="form-control"
+                           id="product_release_form_fee_excluded_desc"
+                           value="测试的费用不好" placeholder="费用不包含描述">
+                </div>
+            </div>
+            <!--预定需知-->
+            <div class="form-group">
+                <label for="product_release_form_order_info" class="col-sm-2 control-label">预定需知</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.order_info" class="form-control"
+                           value="需知安全金蛇" id="product_release_form_order_info" placeholder="预定需知">
+                </div>
+            </div>
+            <!--回程交通类型。1/2/3/4 分别对应 飞机/火车/汽车/船-->
+            <div class="form-group">
+                <label for="product_release_form_backTrafficType" class="col-sm-2 control-label">回程交通类型</label>
+                <div class="col-sm-10">
+                    <select name="product.backTrafficType" id="product_release_form_backTrafficType"
+                            class="form-control">
+                        <option value="1">飞机</option>
+                        <option value="2">火车</option>
+                        <option value="3">汽车</option>
+                        <option value="4">船</option>
+                    </select>
+                </div>
+            </div>
+            <!--参考班次号，飞机需要填航班号，火车需要填车次号，汽车和船可不填-->
+            <div class="form-group">
+                <label for="product_release_form_backTrafficNo" class="col-sm-2 control-label">参考班次号</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.backTrafficNo" class="form-control"
+                           value="CA123" id="product_release_form_backTrafficNo" placeholder="参考班次号">
+                </div>
+            </div>
+            <!--去程交通类型。1/2/3/4 分别对应 飞机/火车/汽车/船-->
+            <div class="form-group">
+                <label for="product_release_form_goTrafficType" class="col-sm-2 control-label">去程交通类型</label>
+                <div class="col-sm-10">
+                    <select name="product.goTrafficType" id="product_release_form_goTrafficType" class="form-control">
+                        <option value="1">飞机</option>
+                        <option value="2">火车</option>
+                        <option value="3">汽车</option>
+                        <option value="4">船</option>
+                    </select>
+                </div>
+            </div>
+            <!---参考班次号，飞机需要填航班号，火车需要填车次号，汽车和船可不填-->
+            <div class="form-group">
+                <label for="product_release_form_goTrafficNo" class="col-sm-2 control-label">参考班次号</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.goTrafficNo" class="form-control"
+                           value="CA213" id="product_release_form_goTrafficNo" placeholder="参考班次号">
+                </div>
+            </div>
+            <!--价格类型。price_type 取：1-成人价，2-儿童价-->
+            <div class="form-group">
+                <label for="product_release_form_itemSku_priceType" class="col-sm-2 control-label">价格类型</label>
+                <div class="col-sm-10">
+                    <select name="product.itemSku_priceType" id="product_release_form_itemSku_priceType"
+                            class="form-control">
+                        <option value="1">成人价</option>
+                        <option value="2">儿童价</option>
+                    </select>
+                </div>
+            </div>
+            <!--库存-->
+            <div class="form-group">
+                <label for="product_release_form_itemSku_stock" class="col-sm-2 control-label">库存</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.itemSku_stock" class="form-control"
+                           value="20" id="product_release_form_itemSku_stock" placeholder="库存">
+                </div>
+            </div>
+            <!--价格-->
+            <div class="form-group">
+                <label for="product_release_form_itemSku_price" class="col-sm-2 control-label">价格</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.itemSku_price" class="form-control"
+                           value="9" id="product_release_form_itemSku_price" placeholder="价格">
+                </div>
+            </div>
+            <!--重量-->
+            <div class="form-group">
+                <label for="product_release_form_weight" class="col-sm-2 control-label">重量</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.weight" class="form-control" id="product_release_form_weight"
+                           value="0.01" placeholder="重量">
+                </div>
+            </div>
+            <!--市场价格-->
+            <div class="form-group">
+                <label for="product_release_form_marketPrice" class="col-sm-2 control-label">市场价格</label>
+                <div class="col-sm-10">
+                    <input type="text" name="product.marketPrice" class="form-control"
+                           value="10" id="product_release_form_marketPrice" placeholder="市场价格">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <!-- 此处由于不是用表格的type="submit"提交,故不能使用那个。不然会导致新增DOM元素有问题 -->
+                    <button type="button" class="btn btn-default" onclick="productReleaseSubmit()">发布商品</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="rightcontent_order_transaction" class="col-md-10">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>订单号</th>
+                <th>商品名称</th>
+                <th>商品单价</th>
+                <th>商品数量</th>
+                <th>实付款</th>
+                <th>买家信息</th>
+                <th>交易状态</th>
+                <th>订单平台</th>
+                <th>交易操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>194145142771084</th>
+                <th>杭州海南三天两夜沙箱测试</th>
+                <th>0.01</th>
+                <th>1</th>
+                <th>0.01</th>
+                <th>sandbox_cilai_c</th>
+                <th>买家已付款</th>
+                <th>淘宝</th>
+                <th>
+                    <button type="button" class="btn btn-primary">
+                        <span class="icon-cloud-upload"></span> 发货
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>8788320475778</th>
+                <th>测试格力旅游沙箱测试</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>18202723042</th>
+                <th>买家已付款</th>
+                <th>1号店</th>
+                <th>
+                    <button type="button" class="btn btn-primary">
+                        <span class="icon-cloud-upload"></span> 发货
+                    </button>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+</body>
+</html>

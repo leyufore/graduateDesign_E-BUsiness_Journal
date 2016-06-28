@@ -1,0 +1,2188 @@
+{
+  "response": {
+    "categoryAttributeInfoList": {
+      "categoryAttributeInfo": [
+        {
+          "attributeId": 23713,
+          "attributeName": "旅游其他消费",
+          "valueType": 0,
+          "editType": 1,
+          "isMustEnter": 1,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 126574,
+                "itemLabel": "有购物"
+              },
+              {
+                "itemId": 126575,
+                "itemLabel": "有购物有加点"
+              },
+              {
+                "itemId": 126576,
+                "itemLabel": "有加点"
+              },
+              {
+                "itemId": 126577,
+                "itemLabel": "无购物无加点"
+              }
+            ]
+          }
+        },
+        {
+          "attributeId": 23732,
+          "attributeName": "旅游日程",
+          "valueType": 0,
+          "editType": 1,
+          "isMustEnter": 0,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 126662,
+                "itemLabel": "1日游"
+              },
+              {
+                "itemId": 126663,
+                "itemLabel": "2日游"
+              },
+              {
+                "itemId": 126664,
+                "itemLabel": "3日游"
+              },
+              {
+                "itemId": 126665,
+                "itemLabel": "4日游"
+              },
+              {
+                "itemId": 126666,
+                "itemLabel": "5日游"
+              },
+              {
+                "itemId": 126667,
+                "itemLabel": "6日游"
+              },
+              {
+                "itemId": 126668,
+                "itemLabel": "7-9日游"
+              },
+              {
+                "itemId": 126669,
+                "itemLabel": "10日以上"
+              }
+            ]
+          }
+        },
+        {
+          "attributeId": 23631,
+          "attributeName": "出游人群",
+          "valueType": 0,
+          "editType": 2,
+          "isMustEnter": 1,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 125916,
+                "itemLabel": "成人"
+              },
+              {
+                "itemId": 125917,
+                "itemLabel": "儿童"
+              },
+              {
+                "itemId": 125918,
+                "itemLabel": "单人房差"
+              },
+              {
+                "itemId": 125919,
+                "itemLabel": "标准团"
+              }
+            ]
+          }
+        },
+        {
+          "attributeId": 23734,
+          "attributeName": "旅游方式",
+          "valueType": 0,
+          "editType": 1,
+          "isMustEnter": 0,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 126679,
+                "itemLabel": "跟团游"
+              },
+              {
+                "itemId": 126680,
+                "itemLabel": "自由行"
+              },
+              {
+                "itemId": 145971,
+                "itemLabel": "半自由行"
+              },
+              {
+                "itemId": 145972,
+                "itemLabel": "奢华私家团"
+              }
+            ]
+          }
+        },
+        {
+          "attributeId": 23645,
+          "attributeName": "住宿等级",
+          "valueType": 0,
+          "editType": 1,
+          "isMustEnter": 1,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 126004,
+                "itemLabel": "二星及以下"
+              },
+              {
+                "itemId": 126005,
+                "itemLabel": "三星级/舒适型"
+              },
+              {
+                "itemId": 126006,
+                "itemLabel": "四星级/高档型"
+              },
+              {
+                "itemId": 126007,
+                "itemLabel": "五星级/豪华型"
+              },
+              {
+                "itemId": 126008,
+                "itemLabel": "无"
+              },
+              {
+                "itemId": 126009,
+                "itemLabel": "其他"
+              }
+            ]
+          }
+        },
+        {
+          "attributeId": 23673,
+          "attributeName": "旅游线路类型",
+          "valueType": 0,
+          "editType": 1,
+          "isMustEnter": 1,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 126176,
+                "itemLabel": "周边游"
+              },
+              {
+                "itemId": 126177,
+                "itemLabel": "长途游"
+              }
+            ]
+          }
+        },
+        {
+          "attributeId": 23411,
+          "attributeName": "旅游目的地",
+          "valueType": 0,
+          "editType": 1,
+          "isMustEnter": 1,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 123208,
+                "itemLabel": "北京",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123243,
+                      "itemLabel": "海淀区"
+                    },
+                    {
+                      "itemId": 123244,
+                      "itemLabel": "朝阳区"
+                    },
+                    {
+                      "itemId": 123245,
+                      "itemLabel": "崇文区"
+                    },
+                    {
+                      "itemId": 123246,
+                      "itemLabel": "宣武区"
+                    },
+                    {
+                      "itemId": 123247,
+                      "itemLabel": "丰台区"
+                    },
+                    {
+                      "itemId": 123248,
+                      "itemLabel": "石景山区"
+                    },
+                    {
+                      "itemId": 123249,
+                      "itemLabel": "门头沟"
+                    },
+                    {
+                      "itemId": 123250,
+                      "itemLabel": "房山区"
+                    },
+                    {
+                      "itemId": 123251,
+                      "itemLabel": "通州区"
+                    },
+                    {
+                      "itemId": 123252,
+                      "itemLabel": "大兴区"
+                    },
+                    {
+                      "itemId": 123253,
+                      "itemLabel": "昌平区"
+                    },
+                    {
+                      "itemId": 123254,
+                      "itemLabel": "顺义"
+                    },
+                    {
+                      "itemId": 123255,
+                      "itemLabel": "怀柔"
+                    },
+                    {
+                      "itemId": 123256,
+                      "itemLabel": "平谷区"
+                    },
+                    {
+                      "itemId": 123257,
+                      "itemLabel": "密云县"
+                    },
+                    {
+                      "itemId": 123258,
+                      "itemLabel": "延庆县"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123209,
+                "itemLabel": "天津",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123274,
+                      "itemLabel": "静海县"
+                    },
+                    {
+                      "itemId": 123275,
+                      "itemLabel": "宁河县"
+                    },
+                    {
+                      "itemId": 123272,
+                      "itemLabel": "武清区"
+                    },
+                    {
+                      "itemId": 123271,
+                      "itemLabel": "北辰区"
+                    },
+                    {
+                      "itemId": 123270,
+                      "itemLabel": "津南区"
+                    },
+                    {
+                      "itemId": 123269,
+                      "itemLabel": "东丽区"
+                    },
+                    {
+                      "itemId": 123268,
+                      "itemLabel": "西青区"
+                    },
+                    {
+                      "itemId": 123267,
+                      "itemLabel": "大港区"
+                    },
+                    {
+                      "itemId": 123266,
+                      "itemLabel": "汉沽区"
+                    },
+                    {
+                      "itemId": 123265,
+                      "itemLabel": "塘沽区"
+                    },
+                    {
+                      "itemId": 123264,
+                      "itemLabel": "红桥区"
+                    },
+                    {
+                      "itemId": 123263,
+                      "itemLabel": "河北区"
+                    },
+                    {
+                      "itemId": 123262,
+                      "itemLabel": "南开区"
+                    },
+                    {
+                      "itemId": 123261,
+                      "itemLabel": "河西区"
+                    },
+                    {
+                      "itemId": 123260,
+                      "itemLabel": "河东区"
+                    },
+                    {
+                      "itemId": 123259,
+                      "itemLabel": "和平区"
+                    },
+                    {
+                      "itemId": 123276,
+                      "itemLabel": "蓟县"
+                    },
+                    {
+                      "itemId": 123273,
+                      "itemLabel": "宝坻区"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123210,
+                "itemLabel": "上海",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123293,
+                      "itemLabel": "奉贤区"
+                    },
+                    {
+                      "itemId": 123292,
+                      "itemLabel": "青浦区"
+                    },
+                    {
+                      "itemId": 123291,
+                      "itemLabel": "松江区"
+                    },
+                    {
+                      "itemId": 123290,
+                      "itemLabel": "宝山区"
+                    },
+                    {
+                      "itemId": 123289,
+                      "itemLabel": "杨浦区"
+                    },
+                    {
+                      "itemId": 123288,
+                      "itemLabel": "长宁区"
+                    },
+                    {
+                      "itemId": 123287,
+                      "itemLabel": "静安区"
+                    },
+                    {
+                      "itemId": 123286,
+                      "itemLabel": "普陀区"
+                    },
+                    {
+                      "itemId": 123285,
+                      "itemLabel": "闸北区"
+                    },
+                    {
+                      "itemId": 123284,
+                      "itemLabel": "浦东新区"
+                    },
+                    {
+                      "itemId": 123283,
+                      "itemLabel": "嘉定区"
+                    },
+                    {
+                      "itemId": 123282,
+                      "itemLabel": "金山区"
+                    },
+                    {
+                      "itemId": 123281,
+                      "itemLabel": "闵行区"
+                    },
+                    {
+                      "itemId": 123280,
+                      "itemLabel": "虹口区"
+                    },
+                    {
+                      "itemId": 123279,
+                      "itemLabel": "徐汇区"
+                    },
+                    {
+                      "itemId": 123278,
+                      "itemLabel": "卢湾区"
+                    },
+                    {
+                      "itemId": 123277,
+                      "itemLabel": "黄浦区"
+                    },
+                    {
+                      "itemId": 123294,
+                      "itemLabel": "崇明县"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123211,
+                "itemLabel": "重庆",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123301,
+                      "itemLabel": "北碚区"
+                    },
+                    {
+                      "itemId": 123302,
+                      "itemLabel": "綦江区"
+                    },
+                    {
+                      "itemId": 123303,
+                      "itemLabel": "双桥区"
+                    },
+                    {
+                      "itemId": 123304,
+                      "itemLabel": "渝北区"
+                    },
+                    {
+                      "itemId": 123305,
+                      "itemLabel": "巴南区"
+                    },
+                    {
+                      "itemId": 123306,
+                      "itemLabel": "万州区"
+                    },
+                    {
+                      "itemId": 123307,
+                      "itemLabel": "涪陵区"
+                    },
+                    {
+                      "itemId": 123308,
+                      "itemLabel": "黔江区"
+                    },
+                    {
+                      "itemId": 123309,
+                      "itemLabel": "长寿区"
+                    },
+                    {
+                      "itemId": 123310,
+                      "itemLabel": "江津区"
+                    },
+                    {
+                      "itemId": 123311,
+                      "itemLabel": "合川区"
+                    },
+                    {
+                      "itemId": 123312,
+                      "itemLabel": "永川区"
+                    },
+                    {
+                      "itemId": 123313,
+                      "itemLabel": "南川区"
+                    },
+                    {
+                      "itemId": 123295,
+                      "itemLabel": "渝中区"
+                    },
+                    {
+                      "itemId": 123296,
+                      "itemLabel": "大渡口区"
+                    },
+                    {
+                      "itemId": 123297,
+                      "itemLabel": "江北区"
+                    },
+                    {
+                      "itemId": 123298,
+                      "itemLabel": "沙坪坝区"
+                    },
+                    {
+                      "itemId": 123299,
+                      "itemLabel": "九龙坡区"
+                    },
+                    {
+                      "itemId": 123300,
+                      "itemLabel": "南岸区"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123212,
+                "itemLabel": "河北",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123314,
+                      "itemLabel": "石家庄"
+                    },
+                    {
+                      "itemId": 123315,
+                      "itemLabel": "唐山"
+                    },
+                    {
+                      "itemId": 123316,
+                      "itemLabel": "秦皇岛"
+                    },
+                    {
+                      "itemId": 123317,
+                      "itemLabel": "邯郸"
+                    },
+                    {
+                      "itemId": 123324,
+                      "itemLabel": "衡水"
+                    },
+                    {
+                      "itemId": 123319,
+                      "itemLabel": "保定"
+                    },
+                    {
+                      "itemId": 123320,
+                      "itemLabel": "张家口"
+                    },
+                    {
+                      "itemId": 123321,
+                      "itemLabel": "承德"
+                    },
+                    {
+                      "itemId": 123322,
+                      "itemLabel": "沧州"
+                    },
+                    {
+                      "itemId": 123323,
+                      "itemLabel": "廊坊"
+                    },
+                    {
+                      "itemId": 123318,
+                      "itemLabel": "邢台"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123213,
+                "itemLabel": "山西",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123325,
+                      "itemLabel": "太原"
+                    },
+                    {
+                      "itemId": 123326,
+                      "itemLabel": "大同"
+                    },
+                    {
+                      "itemId": 123327,
+                      "itemLabel": "阳泉"
+                    },
+                    {
+                      "itemId": 123328,
+                      "itemLabel": "长治"
+                    },
+                    {
+                      "itemId": 123329,
+                      "itemLabel": "晋城"
+                    },
+                    {
+                      "itemId": 123330,
+                      "itemLabel": "朔州"
+                    },
+                    {
+                      "itemId": 123331,
+                      "itemLabel": "晋中"
+                    },
+                    {
+                      "itemId": 123332,
+                      "itemLabel": "运城"
+                    },
+                    {
+                      "itemId": 123333,
+                      "itemLabel": "忻州"
+                    },
+                    {
+                      "itemId": 123334,
+                      "itemLabel": "临汾"
+                    },
+                    {
+                      "itemId": 123335,
+                      "itemLabel": "吕梁"
+                    },
+                    {
+                      "itemId": 123336,
+                      "itemLabel": "平遥"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123214,
+                "itemLabel": "内蒙古",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123337,
+                      "itemLabel": "呼和浩特"
+                    },
+                    {
+                      "itemId": 123338,
+                      "itemLabel": "包头"
+                    },
+                    {
+                      "itemId": 123339,
+                      "itemLabel": "乌海"
+                    },
+                    {
+                      "itemId": 123340,
+                      "itemLabel": "赤峰"
+                    },
+                    {
+                      "itemId": 123341,
+                      "itemLabel": "通辽"
+                    },
+                    {
+                      "itemId": 123342,
+                      "itemLabel": "鄂尔多斯"
+                    },
+                    {
+                      "itemId": 123343,
+                      "itemLabel": "呼伦贝尔"
+                    },
+                    {
+                      "itemId": 123344,
+                      "itemLabel": "巴彦淖尔"
+                    },
+                    {
+                      "itemId": 123345,
+                      "itemLabel": "乌兰察布"
+                    },
+                    {
+                      "itemId": 123346,
+                      "itemLabel": "兴安"
+                    },
+                    {
+                      "itemId": 123347,
+                      "itemLabel": "锡林郭勒"
+                    },
+                    {
+                      "itemId": 123348,
+                      "itemLabel": "阿拉善"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123215,
+                "itemLabel": "辽宁",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123349,
+                      "itemLabel": "沈阳"
+                    },
+                    {
+                      "itemId": 123350,
+                      "itemLabel": "大连"
+                    },
+                    {
+                      "itemId": 123351,
+                      "itemLabel": "鞍山"
+                    },
+                    {
+                      "itemId": 123352,
+                      "itemLabel": "抚顺"
+                    },
+                    {
+                      "itemId": 123353,
+                      "itemLabel": "本溪"
+                    },
+                    {
+                      "itemId": 123354,
+                      "itemLabel": "丹东"
+                    },
+                    {
+                      "itemId": 123355,
+                      "itemLabel": "锦州"
+                    },
+                    {
+                      "itemId": 123356,
+                      "itemLabel": "营口"
+                    },
+                    {
+                      "itemId": 123357,
+                      "itemLabel": "阜新"
+                    },
+                    {
+                      "itemId": 123358,
+                      "itemLabel": "辽阳"
+                    },
+                    {
+                      "itemId": 123359,
+                      "itemLabel": "盘锦"
+                    },
+                    {
+                      "itemId": 123360,
+                      "itemLabel": "铁岭"
+                    },
+                    {
+                      "itemId": 123361,
+                      "itemLabel": "朝阳"
+                    },
+                    {
+                      "itemId": 123362,
+                      "itemLabel": "葫芦岛"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123216,
+                "itemLabel": "吉林",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123363,
+                      "itemLabel": "长春"
+                    },
+                    {
+                      "itemId": 123364,
+                      "itemLabel": "四平"
+                    },
+                    {
+                      "itemId": 123365,
+                      "itemLabel": "辽源"
+                    },
+                    {
+                      "itemId": 123366,
+                      "itemLabel": "通化"
+                    },
+                    {
+                      "itemId": 123367,
+                      "itemLabel": "白山"
+                    },
+                    {
+                      "itemId": 123368,
+                      "itemLabel": "松原"
+                    },
+                    {
+                      "itemId": 123369,
+                      "itemLabel": "白城"
+                    },
+                    {
+                      "itemId": 123370,
+                      "itemLabel": "延边"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123217,
+                "itemLabel": "黑龙江",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123371,
+                      "itemLabel": "哈尔滨"
+                    },
+                    {
+                      "itemId": 123372,
+                      "itemLabel": "齐齐哈尔"
+                    },
+                    {
+                      "itemId": 123373,
+                      "itemLabel": "鸡西"
+                    },
+                    {
+                      "itemId": 123374,
+                      "itemLabel": "鹤岗"
+                    },
+                    {
+                      "itemId": 123375,
+                      "itemLabel": "双鸭山"
+                    },
+                    {
+                      "itemId": 123376,
+                      "itemLabel": "大庆"
+                    },
+                    {
+                      "itemId": 123377,
+                      "itemLabel": "伊春"
+                    },
+                    {
+                      "itemId": 123378,
+                      "itemLabel": "佳木斯"
+                    },
+                    {
+                      "itemId": 123379,
+                      "itemLabel": "七台河"
+                    },
+                    {
+                      "itemId": 123380,
+                      "itemLabel": "牡丹江"
+                    },
+                    {
+                      "itemId": 123381,
+                      "itemLabel": "黑河"
+                    },
+                    {
+                      "itemId": 123382,
+                      "itemLabel": "绥化"
+                    },
+                    {
+                      "itemId": 123383,
+                      "itemLabel": "大兴安岭"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123218,
+                "itemLabel": "江苏",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123384,
+                      "itemLabel": "南京"
+                    },
+                    {
+                      "itemId": 123385,
+                      "itemLabel": "无锡"
+                    },
+                    {
+                      "itemId": 123386,
+                      "itemLabel": "徐州"
+                    },
+                    {
+                      "itemId": 123387,
+                      "itemLabel": "常州"
+                    },
+                    {
+                      "itemId": 123388,
+                      "itemLabel": "苏州"
+                    },
+                    {
+                      "itemId": 123389,
+                      "itemLabel": "南通"
+                    },
+                    {
+                      "itemId": 123390,
+                      "itemLabel": "连云港"
+                    },
+                    {
+                      "itemId": 123391,
+                      "itemLabel": "淮安"
+                    },
+                    {
+                      "itemId": 123392,
+                      "itemLabel": "盐城"
+                    },
+                    {
+                      "itemId": 123393,
+                      "itemLabel": "扬州"
+                    },
+                    {
+                      "itemId": 123394,
+                      "itemLabel": "镇江"
+                    },
+                    {
+                      "itemId": 123395,
+                      "itemLabel": "泰州"
+                    },
+                    {
+                      "itemId": 123396,
+                      "itemLabel": "宿迁"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123219,
+                "itemLabel": "浙江",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123397,
+                      "itemLabel": "杭州"
+                    },
+                    {
+                      "itemId": 123398,
+                      "itemLabel": "宁波"
+                    },
+                    {
+                      "itemId": 123399,
+                      "itemLabel": "温州"
+                    },
+                    {
+                      "itemId": 123400,
+                      "itemLabel": "嘉兴"
+                    },
+                    {
+                      "itemId": 123401,
+                      "itemLabel": "湖州"
+                    },
+                    {
+                      "itemId": 123402,
+                      "itemLabel": "绍兴"
+                    },
+                    {
+                      "itemId": 123403,
+                      "itemLabel": "金华"
+                    },
+                    {
+                      "itemId": 123404,
+                      "itemLabel": "衢州"
+                    },
+                    {
+                      "itemId": 123405,
+                      "itemLabel": "舟山"
+                    },
+                    {
+                      "itemId": 123406,
+                      "itemLabel": "台州"
+                    },
+                    {
+                      "itemId": 123407,
+                      "itemLabel": "丽水"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123220,
+                "itemLabel": "安徽",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123408,
+                      "itemLabel": "合肥"
+                    },
+                    {
+                      "itemId": 123409,
+                      "itemLabel": "芜湖"
+                    },
+                    {
+                      "itemId": 123410,
+                      "itemLabel": "蚌埠"
+                    },
+                    {
+                      "itemId": 123411,
+                      "itemLabel": "淮南"
+                    },
+                    {
+                      "itemId": 123412,
+                      "itemLabel": "马鞍山"
+                    },
+                    {
+                      "itemId": 123413,
+                      "itemLabel": "淮北"
+                    },
+                    {
+                      "itemId": 123414,
+                      "itemLabel": "铜陵"
+                    },
+                    {
+                      "itemId": 123415,
+                      "itemLabel": "安庆"
+                    },
+                    {
+                      "itemId": 123416,
+                      "itemLabel": "黄山"
+                    },
+                    {
+                      "itemId": 123417,
+                      "itemLabel": "滁州"
+                    },
+                    {
+                      "itemId": 123418,
+                      "itemLabel": "阜阳"
+                    },
+                    {
+                      "itemId": 123419,
+                      "itemLabel": "宿州"
+                    },
+                    {
+                      "itemId": 123420,
+                      "itemLabel": "巢湖"
+                    },
+                    {
+                      "itemId": 123421,
+                      "itemLabel": "六安"
+                    },
+                    {
+                      "itemId": 123422,
+                      "itemLabel": "亳州"
+                    },
+                    {
+                      "itemId": 123423,
+                      "itemLabel": "池州"
+                    },
+                    {
+                      "itemId": 123424,
+                      "itemLabel": "宣城"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123221,
+                "itemLabel": "福建",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123425,
+                      "itemLabel": "福州"
+                    },
+                    {
+                      "itemId": 123426,
+                      "itemLabel": "厦门"
+                    },
+                    {
+                      "itemId": 123427,
+                      "itemLabel": "莆田"
+                    },
+                    {
+                      "itemId": 123428,
+                      "itemLabel": "三明"
+                    },
+                    {
+                      "itemId": 123429,
+                      "itemLabel": "泉州"
+                    },
+                    {
+                      "itemId": 123430,
+                      "itemLabel": "漳州"
+                    },
+                    {
+                      "itemId": 123431,
+                      "itemLabel": "南平"
+                    },
+                    {
+                      "itemId": 123432,
+                      "itemLabel": "龙岩"
+                    },
+                    {
+                      "itemId": 123433,
+                      "itemLabel": "宁德"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123222,
+                "itemLabel": "江西",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123435,
+                      "itemLabel": "景德镇"
+                    },
+                    {
+                      "itemId": 123436,
+                      "itemLabel": "萍乡"
+                    },
+                    {
+                      "itemId": 123437,
+                      "itemLabel": "九江"
+                    },
+                    {
+                      "itemId": 123438,
+                      "itemLabel": "新余"
+                    },
+                    {
+                      "itemId": 123439,
+                      "itemLabel": "鹰潭"
+                    },
+                    {
+                      "itemId": 123440,
+                      "itemLabel": "赣州"
+                    },
+                    {
+                      "itemId": 123441,
+                      "itemLabel": "吉安"
+                    },
+                    {
+                      "itemId": 123442,
+                      "itemLabel": "宜春"
+                    },
+                    {
+                      "itemId": 123443,
+                      "itemLabel": "抚州"
+                    },
+                    {
+                      "itemId": 123444,
+                      "itemLabel": "上饶"
+                    },
+                    {
+                      "itemId": 123434,
+                      "itemLabel": "南昌"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123223,
+                "itemLabel": "山东",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123445,
+                      "itemLabel": "济南"
+                    },
+                    {
+                      "itemId": 123446,
+                      "itemLabel": "青岛"
+                    },
+                    {
+                      "itemId": 123447,
+                      "itemLabel": "淄博"
+                    },
+                    {
+                      "itemId": 123448,
+                      "itemLabel": "枣庄"
+                    },
+                    {
+                      "itemId": 123449,
+                      "itemLabel": "东营"
+                    },
+                    {
+                      "itemId": 123450,
+                      "itemLabel": "烟台"
+                    },
+                    {
+                      "itemId": 123451,
+                      "itemLabel": "潍坊"
+                    },
+                    {
+                      "itemId": 123452,
+                      "itemLabel": "济宁"
+                    },
+                    {
+                      "itemId": 123453,
+                      "itemLabel": "泰安"
+                    },
+                    {
+                      "itemId": 123454,
+                      "itemLabel": "威海"
+                    },
+                    {
+                      "itemId": 123455,
+                      "itemLabel": "日照"
+                    },
+                    {
+                      "itemId": 123456,
+                      "itemLabel": "莱芜"
+                    },
+                    {
+                      "itemId": 123457,
+                      "itemLabel": "临沂"
+                    },
+                    {
+                      "itemId": 123458,
+                      "itemLabel": "德州"
+                    },
+                    {
+                      "itemId": 123459,
+                      "itemLabel": "聊城"
+                    },
+                    {
+                      "itemId": 123460,
+                      "itemLabel": "滨州"
+                    },
+                    {
+                      "itemId": 123461,
+                      "itemLabel": "菏泽"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123224,
+                "itemLabel": "河南",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123472,
+                      "itemLabel": "漯河"
+                    },
+                    {
+                      "itemId": 123471,
+                      "itemLabel": "许昌"
+                    },
+                    {
+                      "itemId": 123478,
+                      "itemLabel": "驻马店"
+                    },
+                    {
+                      "itemId": 123477,
+                      "itemLabel": "周口"
+                    },
+                    {
+                      "itemId": 123476,
+                      "itemLabel": "信阳"
+                    },
+                    {
+                      "itemId": 123475,
+                      "itemLabel": "商丘"
+                    },
+                    {
+                      "itemId": 123474,
+                      "itemLabel": "南阳"
+                    },
+                    {
+                      "itemId": 123473,
+                      "itemLabel": "三门峡"
+                    },
+                    {
+                      "itemId": 123462,
+                      "itemLabel": "郑州"
+                    },
+                    {
+                      "itemId": 123463,
+                      "itemLabel": "开封"
+                    },
+                    {
+                      "itemId": 123464,
+                      "itemLabel": "洛阳"
+                    },
+                    {
+                      "itemId": 123465,
+                      "itemLabel": "平顶山"
+                    },
+                    {
+                      "itemId": 123466,
+                      "itemLabel": "安阳"
+                    },
+                    {
+                      "itemId": 123467,
+                      "itemLabel": "鹤壁"
+                    },
+                    {
+                      "itemId": 123470,
+                      "itemLabel": "濮阳"
+                    },
+                    {
+                      "itemId": 123469,
+                      "itemLabel": "焦作"
+                    },
+                    {
+                      "itemId": 123468,
+                      "itemLabel": "新乡"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123225,
+                "itemLabel": "湖北",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123484,
+                      "itemLabel": "荆州"
+                    },
+                    {
+                      "itemId": 123491,
+                      "itemLabel": "恩施"
+                    },
+                    {
+                      "itemId": 123483,
+                      "itemLabel": "襄樊"
+                    },
+                    {
+                      "itemId": 123482,
+                      "itemLabel": "宜昌"
+                    },
+                    {
+                      "itemId": 123481,
+                      "itemLabel": "十堰"
+                    },
+                    {
+                      "itemId": 123490,
+                      "itemLabel": "随州"
+                    },
+                    {
+                      "itemId": 123479,
+                      "itemLabel": "武汉"
+                    },
+                    {
+                      "itemId": 123489,
+                      "itemLabel": "咸宁"
+                    },
+                    {
+                      "itemId": 123488,
+                      "itemLabel": "黄冈"
+                    },
+                    {
+                      "itemId": 123487,
+                      "itemLabel": "孝感"
+                    },
+                    {
+                      "itemId": 123486,
+                      "itemLabel": "鄂州"
+                    },
+                    {
+                      "itemId": 123485,
+                      "itemLabel": "荆门"
+                    },
+                    {
+                      "itemId": 123480,
+                      "itemLabel": "黄石"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123226,
+                "itemLabel": "湖南",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123504,
+                      "itemLabel": "娄底"
+                    },
+                    {
+                      "itemId": 123503,
+                      "itemLabel": "怀化"
+                    },
+                    {
+                      "itemId": 123502,
+                      "itemLabel": "永州"
+                    },
+                    {
+                      "itemId": 123501,
+                      "itemLabel": "郴州"
+                    },
+                    {
+                      "itemId": 123500,
+                      "itemLabel": "益阳"
+                    },
+                    {
+                      "itemId": 123499,
+                      "itemLabel": "张家界"
+                    },
+                    {
+                      "itemId": 123498,
+                      "itemLabel": "常德"
+                    },
+                    {
+                      "itemId": 123497,
+                      "itemLabel": "岳阳"
+                    },
+                    {
+                      "itemId": 123496,
+                      "itemLabel": "邵阳"
+                    },
+                    {
+                      "itemId": 123495,
+                      "itemLabel": "衡阳"
+                    },
+                    {
+                      "itemId": 123494,
+                      "itemLabel": "湘潭"
+                    },
+                    {
+                      "itemId": 123493,
+                      "itemLabel": "株洲"
+                    },
+                    {
+                      "itemId": 123492,
+                      "itemLabel": "长沙"
+                    },
+                    {
+                      "itemId": 123505,
+                      "itemLabel": "湘西"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123227,
+                "itemLabel": "广东",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123526,
+                      "itemLabel": "云浮"
+                    },
+                    {
+                      "itemId": 123506,
+                      "itemLabel": "广州"
+                    },
+                    {
+                      "itemId": 123507,
+                      "itemLabel": "韶关"
+                    },
+                    {
+                      "itemId": 123508,
+                      "itemLabel": "深圳"
+                    },
+                    {
+                      "itemId": 123509,
+                      "itemLabel": "珠海"
+                    },
+                    {
+                      "itemId": 123510,
+                      "itemLabel": "汕头"
+                    },
+                    {
+                      "itemId": 123511,
+                      "itemLabel": "佛山"
+                    },
+                    {
+                      "itemId": 123512,
+                      "itemLabel": "江门"
+                    },
+                    {
+                      "itemId": 123513,
+                      "itemLabel": "湛江"
+                    },
+                    {
+                      "itemId": 123514,
+                      "itemLabel": "茂名"
+                    },
+                    {
+                      "itemId": 123515,
+                      "itemLabel": "肇庆"
+                    },
+                    {
+                      "itemId": 123516,
+                      "itemLabel": "惠州"
+                    },
+                    {
+                      "itemId": 123517,
+                      "itemLabel": "梅州"
+                    },
+                    {
+                      "itemId": 123518,
+                      "itemLabel": "汕尾"
+                    },
+                    {
+                      "itemId": 123519,
+                      "itemLabel": "河源"
+                    },
+                    {
+                      "itemId": 123520,
+                      "itemLabel": "阳江"
+                    },
+                    {
+                      "itemId": 123521,
+                      "itemLabel": "清远"
+                    },
+                    {
+                      "itemId": 123522,
+                      "itemLabel": "东莞"
+                    },
+                    {
+                      "itemId": 123523,
+                      "itemLabel": "中山"
+                    },
+                    {
+                      "itemId": 123524,
+                      "itemLabel": "潮州"
+                    },
+                    {
+                      "itemId": 123525,
+                      "itemLabel": "揭阳"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123228,
+                "itemLabel": "广西",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123536,
+                      "itemLabel": "百色"
+                    },
+                    {
+                      "itemId": 123527,
+                      "itemLabel": "南宁"
+                    },
+                    {
+                      "itemId": 123529,
+                      "itemLabel": "桂林"
+                    },
+                    {
+                      "itemId": 123530,
+                      "itemLabel": "梧州"
+                    },
+                    {
+                      "itemId": 123531,
+                      "itemLabel": "北海"
+                    },
+                    {
+                      "itemId": 123540,
+                      "itemLabel": "崇左"
+                    },
+                    {
+                      "itemId": 123539,
+                      "itemLabel": "来宾"
+                    },
+                    {
+                      "itemId": 123538,
+                      "itemLabel": "河池"
+                    },
+                    {
+                      "itemId": 123537,
+                      "itemLabel": "贺州"
+                    },
+                    {
+                      "itemId": 123528,
+                      "itemLabel": "柳州"
+                    },
+                    {
+                      "itemId": 123535,
+                      "itemLabel": "玉林"
+                    },
+                    {
+                      "itemId": 123534,
+                      "itemLabel": "贵港"
+                    },
+                    {
+                      "itemId": 123533,
+                      "itemLabel": "钦州"
+                    },
+                    {
+                      "itemId": 123532,
+                      "itemLabel": "防城港"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123229,
+                "itemLabel": "海南",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123541,
+                      "itemLabel": "海口"
+                    },
+                    {
+                      "itemId": 123542,
+                      "itemLabel": "三亚"
+                    },
+                    {
+                      "itemId": 123543,
+                      "itemLabel": "兴隆"
+                    },
+                    {
+                      "itemId": 123544,
+                      "itemLabel": "五指山"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123230,
+                "itemLabel": "四川",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123563,
+                      "itemLabel": "阿坝州"
+                    },
+                    {
+                      "itemId": 123562,
+                      "itemLabel": "资阳"
+                    },
+                    {
+                      "itemId": 123561,
+                      "itemLabel": "巴中"
+                    },
+                    {
+                      "itemId": 123560,
+                      "itemLabel": "雅安"
+                    },
+                    {
+                      "itemId": 123559,
+                      "itemLabel": "达州"
+                    },
+                    {
+                      "itemId": 123558,
+                      "itemLabel": "广安"
+                    },
+                    {
+                      "itemId": 123557,
+                      "itemLabel": "宜宾"
+                    },
+                    {
+                      "itemId": 123556,
+                      "itemLabel": "眉山"
+                    },
+                    {
+                      "itemId": 123555,
+                      "itemLabel": "南充"
+                    },
+                    {
+                      "itemId": 123554,
+                      "itemLabel": "乐山"
+                    },
+                    {
+                      "itemId": 123553,
+                      "itemLabel": "内江"
+                    },
+                    {
+                      "itemId": 123552,
+                      "itemLabel": "遂宁"
+                    },
+                    {
+                      "itemId": 123550,
+                      "itemLabel": "绵阳"
+                    },
+                    {
+                      "itemId": 123549,
+                      "itemLabel": "德阳"
+                    },
+                    {
+                      "itemId": 123548,
+                      "itemLabel": "泸州"
+                    },
+                    {
+                      "itemId": 123547,
+                      "itemLabel": "攀枝花"
+                    },
+                    {
+                      "itemId": 123546,
+                      "itemLabel": "自贡"
+                    },
+                    {
+                      "itemId": 123545,
+                      "itemLabel": "成都"
+                    },
+                    {
+                      "itemId": 123551,
+                      "itemLabel": "广元"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123231,
+                "itemLabel": "贵州",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123567,
+                      "itemLabel": "安顺"
+                    },
+                    {
+                      "itemId": 123568,
+                      "itemLabel": "铜仁"
+                    },
+                    {
+                      "itemId": 123569,
+                      "itemLabel": "毕节"
+                    },
+                    {
+                      "itemId": 123570,
+                      "itemLabel": "黔西南"
+                    },
+                    {
+                      "itemId": 123565,
+                      "itemLabel": "六盘水"
+                    },
+                    {
+                      "itemId": 123572,
+                      "itemLabel": "黔南"
+                    },
+                    {
+                      "itemId": 123564,
+                      "itemLabel": "贵阳"
+                    },
+                    {
+                      "itemId": 123566,
+                      "itemLabel": "遵义"
+                    },
+                    {
+                      "itemId": 123571,
+                      "itemLabel": "黔东南"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123232,
+                "itemLabel": "云南",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123583,
+                      "itemLabel": "文山"
+                    },
+                    {
+                      "itemId": 123584,
+                      "itemLabel": "西双版纳"
+                    },
+                    {
+                      "itemId": 123585,
+                      "itemLabel": "大理"
+                    },
+                    {
+                      "itemId": 123586,
+                      "itemLabel": "德宏"
+                    },
+                    {
+                      "itemId": 123587,
+                      "itemLabel": "怒江"
+                    },
+                    {
+                      "itemId": 123588,
+                      "itemLabel": "迪庆"
+                    },
+                    {
+                      "itemId": 123573,
+                      "itemLabel": "昆明"
+                    },
+                    {
+                      "itemId": 123574,
+                      "itemLabel": "曲靖"
+                    },
+                    {
+                      "itemId": 123575,
+                      "itemLabel": "玉溪"
+                    },
+                    {
+                      "itemId": 123576,
+                      "itemLabel": "保山"
+                    },
+                    {
+                      "itemId": 123577,
+                      "itemLabel": "昭通"
+                    },
+                    {
+                      "itemId": 123578,
+                      "itemLabel": "丽江"
+                    },
+                    {
+                      "itemId": 123579,
+                      "itemLabel": "普洱"
+                    },
+                    {
+                      "itemId": 123580,
+                      "itemLabel": "临沧"
+                    },
+                    {
+                      "itemId": 123581,
+                      "itemLabel": "楚雄"
+                    },
+                    {
+                      "itemId": 123582,
+                      "itemLabel": "红河"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123233,
+                "itemLabel": "西藏",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123589,
+                      "itemLabel": "拉萨"
+                    },
+                    {
+                      "itemId": 123590,
+                      "itemLabel": "昌都"
+                    },
+                    {
+                      "itemId": 123591,
+                      "itemLabel": "山南"
+                    },
+                    {
+                      "itemId": 123592,
+                      "itemLabel": "日喀则"
+                    },
+                    {
+                      "itemId": 123593,
+                      "itemLabel": "那曲"
+                    },
+                    {
+                      "itemId": 123594,
+                      "itemLabel": "阿里"
+                    },
+                    {
+                      "itemId": 123595,
+                      "itemLabel": "林芝"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123234,
+                "itemLabel": "陕西",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123596,
+                      "itemLabel": "西安"
+                    },
+                    {
+                      "itemId": 123597,
+                      "itemLabel": "铜川"
+                    },
+                    {
+                      "itemId": 123598,
+                      "itemLabel": "宝鸡"
+                    },
+                    {
+                      "itemId": 123599,
+                      "itemLabel": "咸阳"
+                    },
+                    {
+                      "itemId": 123600,
+                      "itemLabel": "渭南"
+                    },
+                    {
+                      "itemId": 123601,
+                      "itemLabel": "延安"
+                    },
+                    {
+                      "itemId": 123602,
+                      "itemLabel": "汉中"
+                    },
+                    {
+                      "itemId": 123603,
+                      "itemLabel": "榆林"
+                    },
+                    {
+                      "itemId": 123604,
+                      "itemLabel": "安康"
+                    },
+                    {
+                      "itemId": 123605,
+                      "itemLabel": "商洛"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123235,
+                "itemLabel": "甘肃",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123619,
+                      "itemLabel": "甘南"
+                    },
+                    {
+                      "itemId": 123606,
+                      "itemLabel": "兰州"
+                    },
+                    {
+                      "itemId": 123607,
+                      "itemLabel": "嘉峪关"
+                    },
+                    {
+                      "itemId": 123608,
+                      "itemLabel": "金昌"
+                    },
+                    {
+                      "itemId": 123609,
+                      "itemLabel": "白银"
+                    },
+                    {
+                      "itemId": 123610,
+                      "itemLabel": "天水"
+                    },
+                    {
+                      "itemId": 123611,
+                      "itemLabel": "武威"
+                    },
+                    {
+                      "itemId": 123612,
+                      "itemLabel": "张掖"
+                    },
+                    {
+                      "itemId": 123613,
+                      "itemLabel": "平凉"
+                    },
+                    {
+                      "itemId": 123614,
+                      "itemLabel": "酒泉"
+                    },
+                    {
+                      "itemId": 123615,
+                      "itemLabel": "庆阳"
+                    },
+                    {
+                      "itemId": 123616,
+                      "itemLabel": "定西"
+                    },
+                    {
+                      "itemId": 123617,
+                      "itemLabel": "陇南"
+                    },
+                    {
+                      "itemId": 123618,
+                      "itemLabel": "临夏"
+                    },
+                    {
+                      "itemId": 123620,
+                      "itemLabel": "敦煌"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123236,
+                "itemLabel": "青海",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123621,
+                      "itemLabel": "西宁"
+                    },
+                    {
+                      "itemId": 123622,
+                      "itemLabel": "海东"
+                    },
+                    {
+                      "itemId": 123623,
+                      "itemLabel": "海北"
+                    },
+                    {
+                      "itemId": 123624,
+                      "itemLabel": "黄南"
+                    },
+                    {
+                      "itemId": 123625,
+                      "itemLabel": "果洛"
+                    },
+                    {
+                      "itemId": 123626,
+                      "itemLabel": "玉树"
+                    },
+                    {
+                      "itemId": 123627,
+                      "itemLabel": "海西"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123237,
+                "itemLabel": "宁夏",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123628,
+                      "itemLabel": "银川"
+                    },
+                    {
+                      "itemId": 123629,
+                      "itemLabel": "石嘴山"
+                    },
+                    {
+                      "itemId": 123630,
+                      "itemLabel": "吴忠"
+                    },
+                    {
+                      "itemId": 123631,
+                      "itemLabel": "固原"
+                    },
+                    {
+                      "itemId": 123632,
+                      "itemLabel": "中卫"
+                    },
+                    {
+                      "itemId": 123633,
+                      "itemLabel": "哈密"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123238,
+                "itemLabel": "新疆",
+                "subAttributeEditItemInfoList": {
+                  "attributeItemInfo": [
+                    {
+                      "itemId": 123640,
+                      "itemLabel": "和田"
+                    },
+                    {
+                      "itemId": 123641,
+                      "itemLabel": "博尔塔拉"
+                    },
+                    {
+                      "itemId": 123642,
+                      "itemLabel": "克孜勒苏"
+                    },
+                    {
+                      "itemId": 123643,
+                      "itemLabel": "昌吉"
+                    },
+                    {
+                      "itemId": 123644,
+                      "itemLabel": "巴音郭楞"
+                    },
+                    {
+                      "itemId": 123645,
+                      "itemLabel": "塔城"
+                    },
+                    {
+                      "itemId": 123646,
+                      "itemLabel": "克拉玛依"
+                    },
+                    {
+                      "itemId": 123634,
+                      "itemLabel": "乌鲁木齐"
+                    },
+                    {
+                      "itemId": 123635,
+                      "itemLabel": "吐鲁番"
+                    },
+                    {
+                      "itemId": 123636,
+                      "itemLabel": "阿勒泰"
+                    },
+                    {
+                      "itemId": 123637,
+                      "itemLabel": "阿克苏"
+                    },
+                    {
+                      "itemId": 123638,
+                      "itemLabel": "伊犁"
+                    },
+                    {
+                      "itemId": 123639,
+                      "itemLabel": "喀什"
+                    }
+                  ]
+                }
+              },
+              {
+                "itemId": 123239,
+                "itemLabel": "香港"
+              },
+              {
+                "itemId": 123240,
+                "itemLabel": "澳门"
+              },
+              {
+                "itemId": 123241,
+                "itemLabel": "台湾"
+              },
+              {
+                "itemId": 123242,
+                "itemLabel": "其它"
+              }
+            ]
+          }
+        },
+        {
+          "attributeId": 23453,
+          "attributeName": "国内旅游主题",
+          "valueType": 0,
+          "editType": 2,
+          "isMustEnter": 1,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 123952,
+                "itemLabel": "名山"
+              },
+              {
+                "itemId": 123953,
+                "itemLabel": "海滨"
+              },
+              {
+                "itemId": 123954,
+                "itemLabel": "温泉"
+              },
+              {
+                "itemId": 123955,
+                "itemLabel": "自然风光"
+              },
+              {
+                "itemId": 123956,
+                "itemLabel": "古镇"
+              },
+              {
+                "itemId": 123957,
+                "itemLabel": "都市"
+              },
+              {
+                "itemId": 123958,
+                "itemLabel": "个性（特种）"
+              },
+              {
+                "itemId": 123959,
+                "itemLabel": "历史人文"
+              }
+            ]
+          }
+        },
+        {
+          "attributeId": 23395,
+          "attributeName": "去回程交通",
+          "valueType": 0,
+          "editType": 1,
+          "isMustEnter": 0,
+          "isDescribeAttribute": 0,
+          "isGuideAttribute": 1,
+          "isSeriesAttribute": 0,
+          "attributeItemInfoList": {
+            "attributeItemInfo": [
+              {
+                "itemId": 123141,
+                "itemLabel": "飞机"
+              },
+              {
+                "itemId": 123142,
+                "itemLabel": "火车（高铁或动车）"
+              },
+              {
+                "itemId": 123143,
+                "itemLabel": "火车（其他车型）"
+              },
+              {
+                "itemId": 123144,
+                "itemLabel": "汽车"
+              },
+              {
+                "itemId": 123145,
+                "itemLabel": "游船"
+              },
+              {
+                "itemId": 123146,
+                "itemLabel": "无"
+              },
+              {
+                "itemId": 123147,
+                "itemLabel": "其他"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "totalCount": 9,
+    "errorCount": 0
+  }
+}

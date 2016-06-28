@@ -1,0 +1,82 @@
+{
+  "response": {
+    "categoryInfoList": {
+      "categoryInfo": [
+        {
+          "categoryId": 970520,
+          "categoryName": "租车",
+          "categoryIsLeaf": 1,
+          "categoryCode": "0009705208",
+          "categoryParentId": 970252,
+          "categorySearchName": "0-970235-970252-970520:生活服务-景点门票/旅游服务-租车",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970521,
+          "categoryName": "景点门票",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009705219",
+          "categoryParentId": 970252,
+          "categorySearchName": "0-970235-970252-970521:生活服务-景点门票/旅游服务-景点门票",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 974076,
+          "categoryName": "签证",
+          "categoryIsLeaf": 1,
+          "categoryCode": "0009740765",
+          "categoryParentId": 970252,
+          "categorySearchName": "0-970235-970252-974076:生活服务-景点门票/旅游服务-签证",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970509,
+          "categoryName": "旅游卡券/服务",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009705093",
+          "categoryParentId": 970252,
+          "categorySearchName": "0-970235-970252-970509:生活服务-景点门票/旅游服务-旅游卡券/服务",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970504,
+          "categoryName": "旅游度假线路",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009705048",
+          "categoryParentId": 970252,
+          "categorySearchName": "0-970235-970252-970504:生活服务-景点门票/旅游服务-旅游度假线路",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970519,
+          "categoryName": "巴士/地铁/交通卡券",
+          "categoryIsLeaf": 1,
+          "categoryCode": "0009705195",
+          "categoryParentId": 970252,
+          "categorySearchName": "0-970235-970252-970519:生活服务-景点门票/旅游服务-巴士/地铁/交通卡券",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        }
+      ]
+    },
+    "totalCount": 6,
+    "errorCount": 0
+  }
+}

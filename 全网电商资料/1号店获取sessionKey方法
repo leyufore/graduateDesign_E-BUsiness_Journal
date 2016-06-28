@@ -1,0 +1,47 @@
+https://member.yhd.com/login/authorize.do?client_id=您的AppKey&response_type=code&redirect_uri=您的回调地址(接收code)
+
+返回code的回调地址
+http://www.php-note.com/article/detail/730?code=823af655ab5e4d2d9c937337ca713fff_1463123939677
+
+获取
+https://member.yhd.com/login/token.do?client_id=10210016051300004009&client_secret=62e5d7be6e967fc4b1892a6240f7f964&code=823af655ab5e4d2d9c937337ca713fff_1463123939677&grant_type=authorization_code&redirect_uri=http://www.php-note.com/article/detail/730
+
+
+{
+accessToken: "2cc2238c8c12da12ef05937db0d01f24",
+expiresIn: 1778646973000,
+merchantId: 52809,
+nickName: "商必赢",
+refreshExpiresIn: 1778646973000,
+refreshToken: "192ec7c9ddb8dd7081b11d2e01882e72",
+userCode: "sbyisvtest007",
+userId: 85148,
+userType: 1
+}
+
+appKey :10210016051300004009
+secret :62e5d7be6e967fc4b1892a6240f7f964
+sessionKey :2cc2238c8c12da12ef05937db0d01f24
+
+产品主图：
+1 图片文件大小不能超过454K
+2 图片分辨率须大于380x380
+3 图片长宽应接近正方形，比率应在0.98内
+
+
+1.https://member.yhd.com/login/authorize.do?client_id=10210016051300004009&response_type=code&redirect_uri=http://www.php-note.com/article/detail/730
+
+2.输入用户信息
+
+3.回调地址的url中包含了code 492fdb214c094bf8907c336415880eae_1464282673634
+
+4.https://member.yhd.com/login/token.do?client_id=10210016051300004009&client_secret=62e5d7be6e967fc4b1892a6240f7f964&code=492fdb214c094bf8907c336415880eae_1464282673634&grant_type=authorization_code&redirect_uri=http://www.php-note.com/article/detail/730
+
+5.获取到json数据
+
+6.跳转地址
+
+测试账号：
+sbyisvtest007
+账号密码：sby007
+

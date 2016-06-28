@@ -1,0 +1,14 @@
+{
+  "response": {
+    "brandInfoList": {
+      "brandInfo": [
+        {
+          "brandName": "测试品牌",
+          "brandId": 926569
+        }
+      ]
+    },
+    "totalCount": 1,
+    "errorCount": 0
+  }
+}

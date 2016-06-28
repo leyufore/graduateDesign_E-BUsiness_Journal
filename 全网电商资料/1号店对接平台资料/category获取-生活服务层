@@ -1,0 +1,190 @@
+{
+  "response": {
+    "categoryInfoList": {
+      "categoryInfo": [
+        {
+          "categoryId": 970243,
+          "categoryName": "鲜花速递",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702436",
+          "categoryParentId": 970235,
+          "listOrder": 4,
+          "categorySearchName": "0-970235-970243:生活服务-鲜花速递",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970246,
+          "categoryName": "摄影/摄像服务",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702469",
+          "categoryParentId": 970235,
+          "listOrder": 7,
+          "categorySearchName": "0-970235-970246:生活服务-摄影/摄像服务",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970247,
+          "categoryName": "个性定制/设计服务/DIY",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702470",
+          "categoryParentId": 970235,
+          "listOrder": 8,
+          "categorySearchName": "0-970235-970247:生活服务-个性定制/设计服务/DIY",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970240,
+          "categoryName": "消费卡券",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702403",
+          "categoryParentId": 970235,
+          "listOrder": 1,
+          "categorySearchName": "0-970235-970240:生活服务-消费卡券",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970241,
+          "categoryName": "休闲/娱乐",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702414",
+          "categoryParentId": 970235,
+          "listOrder": 2,
+          "categorySearchName": "0-970235-970241:生活服务-休闲/娱乐",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 973793,
+          "categoryName": "手机充值1",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009737933",
+          "categoryParentId": 970235,
+          "listOrder": 14,
+          "categorySearchName": "0-970235-973793:生活服务-手机充值1",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 10000
+        },
+        {
+          "categoryId": 970245,
+          "categoryName": "教育/培训",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702458",
+          "categoryParentId": 970235,
+          "listOrder": 6,
+          "categorySearchName": "0-970235-970245:生活服务-教育/培训",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970252,
+          "categoryName": "景点门票/旅游服务",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702527",
+          "categoryParentId": 970235,
+          "listOrder": 13,
+          "categorySearchName": "0-970235-970252:生活服务-景点门票/旅游服务",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970249,
+          "categoryName": "本地化生活服务",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702492",
+          "categoryParentId": 970235,
+          "listOrder": 10,
+          "categorySearchName": "0-970235-970249:生活服务-本地化生活服务",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970250,
+          "categoryName": "电影/演出/体育赛事",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702505",
+          "categoryParentId": 970235,
+          "listOrder": 11,
+          "categorySearchName": "0-970235-970250:生活服务-电影/演出/体育赛事",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 975608,
+          "categoryName": "流量充值",
+          "categoryIsLeaf": 1,
+          "categoryCode": "0009756085",
+          "categoryParentId": 970235,
+          "categorySearchName": "0-970235-975608:生活服务-流量充值",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 10000
+        },
+        {
+          "categoryId": 970242,
+          "categoryName": "餐饮/美食",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702425",
+          "categoryParentId": 970235,
+          "listOrder": 3,
+          "categorySearchName": "0-970235-970242:生活服务-餐饮/美食",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970251,
+          "categoryName": "特价酒店/特色客栈",
+          "categoryIsLeaf": 0,
+          "categoryCode": "0009702516",
+          "categoryParentId": 970235,
+          "listOrder": 12,
+          "categorySearchName": "0-970235-970251:生活服务-特价酒店/特色客栈",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 99999
+        },
+        {
+          "categoryId": 975526,
+          "categoryName": "点卡充值",
+          "categoryIsLeaf": 1,
+          "categoryCode": "0009755264",
+          "categoryParentId": 970235,
+          "categorySearchName": "0-970235-975526:生活服务-点卡充值",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 10000
+        }
+      ]
+    },
+    "totalCount": 14,
+    "errorCount": 0
+  }
+}

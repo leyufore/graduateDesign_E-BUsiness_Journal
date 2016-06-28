@@ -1,0 +1,46 @@
+{
+  "response": {
+    "categoryInfoList": {
+      "categoryInfo": [
+        {
+          "categoryId": 970506,
+          "categoryName": "出境旅游度假/自由行",
+          "categoryIsLeaf": 1,
+          "categoryCode": "0009705060",
+          "categoryParentId": 970504,
+          "categorySearchName": "0-970235-970252-970504-970506:生活服务-景点门票/旅游服务-旅游度假线路-出境旅游度假/自由行",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970507,
+          "categoryName": "导游",
+          "categoryIsLeaf": 1,
+          "categoryCode": "0009705071",
+          "categoryParentId": 970504,
+          "categorySearchName": "0-970235-970252-970504-970507:生活服务-景点门票/旅游服务-旅游度假线路-导游",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        },
+        {
+          "categoryId": 970505,
+          "categoryName": "国内旅游度假/自由行",
+          "categoryIsLeaf": 1,
+          "categoryCode": "0009705059",
+          "categoryParentId": 970504,
+          "categorySearchName": "0-970235-970252-970504-970505:生活服务-景点门票/旅游服务-旅游度假线路-国内旅游度假/自由行",
+          "forumId": 0,
+          "canTranOrderLimitPrice": 0.0,
+          "isVisible": 1,
+          "maxStockNum": 3000
+        }
+      ]
+    },
+    "totalCount": 3,
+    "errorCount": 0
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-7 12:56:50 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.leyufore.domain.Trade" table="TRADE">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="orederId" type="long">
+            <column name="OREDERID" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="order_titile" type="java.lang.String">
+            <column name="ORDER_TITILE" />
+        </property>
+        <property name="price" type="double">
+            <column name="PRICE" />
+        </property>
+        <property name="count" type="int">
+            <column name="COUNT" />
+        </property>
+        <property name="totalPrice" type="double">
+            <column name="TOTALPRICE" />
+        </property>
+        <property name="buyer_nick" type="java.lang.String">
+            <column name="BUYER_NICK" />
+        </property>
+        <property name="platform" type="java.lang.String">
+            <column name="PLATFORM" />
+        </property>
+    </class>
+</hibernate-mapping>

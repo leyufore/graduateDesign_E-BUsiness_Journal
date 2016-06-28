@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<package name="leyufore" extends="struts-default">
+	    <!-- 商品发布 -->
+		<action name="productAction_productRelease" class="com.leyufore.action.ProductAction"
+			method="productRelease">
+		</action>
+		<!-- 商品图片上传 -->
+		<action name="productAction_productImgUpload" class="com.leyufore.action.ProductAction"
+			method="productImgUpload">
+		</action>
+		<!-- 商品查询所有 -->
+		<action name="productAction_productFindAll" class="com.leyufore.action.ProductAction"
+			method="productFindAll">
+		</action>
+		<!-- 商品上架 -->
+		<action name="productAction_productShelveUp" class="com.leyufore.action.ProductAction"
+			method="productShelveUp">
+		</action>
+		<!-- 商品下架 -->
+		<action name="productAction_productShelveDown" class="com.leyufore.action.ProductAction"
+			method="productShelveDown">
+		</action>
+		<!-- 商品删除 -->
+		<action name="productAction_productDelete" class="com.leyufore.action.ProductAction"
+			method="productDelete">
+		</action>
+	</package>
+</struts>

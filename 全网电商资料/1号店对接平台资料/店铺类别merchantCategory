@@ -1,0 +1,166 @@
+{
+  "response": {
+    "merchantCategoryInfoList": {
+      "merchantCategoryInfo": [
+        {
+          "merchantCategoryId": 756646,
+          "categoryCode": "A",
+          "categoryName": "电脑电器",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 1,
+          "backOperatorId": "85148",
+          "listOrder": 0,
+          "categorySearchName": "0-756646:电脑电器",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 840280,
+          "categoryCode": "A",
+          "categoryName": "测试父分类",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 0,
+          "backOperatorId": "85148",
+          "listOrder": 1,
+          "categorySearchName": "0-840280:测试父分类",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 851527,
+          "categoryCode": "A",
+          "categoryName": "P1",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 0,
+          "backOperatorId": "85148",
+          "listOrder": 2,
+          "categorySearchName": "0-851527:P1",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 961339,
+          "categoryCode": "A",
+          "categoryName": "家居",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 1,
+          "backOperatorId": "85148",
+          "listOrder": 3,
+          "categorySearchName": "0-961339:家居",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 961635,
+          "categoryCode": "A",
+          "categoryName": "厨卫清洁",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 1,
+          "backOperatorId": "85148",
+          "listOrder": 4,
+          "categorySearchName": "0-961635:厨卫清洁",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 961818,
+          "categoryCode": "A",
+          "categoryName": "生活电器",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 0,
+          "backOperatorId": "85148",
+          "listOrder": 5,
+          "categorySearchName": "0-961818:生活电器",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 972500,
+          "categoryCode": "A",
+          "categoryName": "真人CS装备",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 1,
+          "backOperatorId": "85148",
+          "listOrder": 6,
+          "categorySearchName": "0-972500:真人CS装备",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 978266,
+          "categoryCode": "A",
+          "categoryName": "食品饮料",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 1,
+          "backOperatorId": "85148",
+          "listOrder": 7,
+          "categorySearchName": "0-978266:食品饮料",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 1014979,
+          "categoryCode": "A",
+          "categoryName": "测试",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 0,
+          "backOperatorId": "85148",
+          "listOrder": 8,
+          "categorySearchName": "0-1014979:测试",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 1043437,
+          "categoryCode": "A",
+          "categoryName": "母婴",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 0,
+          "backOperatorId": "85148",
+          "listOrder": 9,
+          "categorySearchName": "0-1043437:母婴",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 1073046,
+          "categoryCode": "A",
+          "categoryName": "珠宝/饰品/钟表/眼镜",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 0,
+          "backOperatorId": "85148",
+          "listOrder": 10,
+          "categorySearchName": "0-1073046:珠宝/饰品/钟表/眼镜",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 1081293,
+          "categoryCode": "A",
+          "categoryName": "药品/医疗器械/健康服务",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 0,
+          "backOperatorId": "85148",
+          "listOrder": 11,
+          "categorySearchName": "0-1081293:药品/医疗器械/健康服务",
+          "forumId": 0,
+          "isVisible": 1
+        },
+        {
+          "merchantCategoryId": 1082715,
+          "categoryCode": "A",
+          "categoryName": "旅游产品",
+          "categoryParentId": 0,
+          "categoryIsLeaf": 1,
+          "backOperatorId": "85148",
+          "listOrder": 12,
+          "categorySearchName": "0-1082715:旅游产品",
+          "forumId": 0,
+          "isVisible": 1
+        }
+      ]
+    },
+    "totalCount": 13,
+    "errorCount": 0
+  }
+}
